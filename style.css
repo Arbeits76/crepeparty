@@ -1,0 +1,85 @@
+.titre{
+    padding:5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    grid-area: titre;
+}
+
+.titre2{
+    padding:7px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: start;
+}
+
+
+.compt{
+    background-color:white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 60px;
+    height: 25px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.container1{
+    padding:20px;
+    background-color: rgb(223, 221, 217);
+    border-radius: 10px;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+}
+
+
+.container2{
+    padding:20px;
+    background-color: rgb(223, 221, 217);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container3{
+    padding:20px;
+    background-color: rgb(223, 221, 217);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 0.6fr 1.9fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titre titre"
+      "container1 all";
+  }
+  
+  .dispotion {  display: grid;
+    grid-template-columns: 0.6fr 1.9fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titre titre"
+      "container1 all";
+  }
+  
+
+  
+  .container1 { grid-area: container1; }
+  
+  .all { grid-area: all; }
+  
+  
